@@ -1,8 +1,3 @@
-
-if __name__ == "__main__":
-    from marca import Marca
-    from control import Control
-
 class TV:
     numTV = 0
     _canal = 1
