@@ -15,7 +15,8 @@ class TV:
         self.add1numTV()
 
     def setCanal(self, canal: int) -> None:
-        self._canal = canal
+        if (canal in range(1,120) and self.estado == True):
+            self._canal = canal
 
     def setPrecio(self, precio: int) -> None:
         self._precio = precio

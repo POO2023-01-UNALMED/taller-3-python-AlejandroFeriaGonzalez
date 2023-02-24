@@ -1,5 +1,7 @@
 class Control:
-    tv = None
+    # tv = None
+    def __init__(self) -> None:
+        pass
     
     def turnOn(self):
         self.tv.turnOn()
@@ -25,6 +27,7 @@ class Control:
 
     def enlazar(self, tv):
         tv.setControl(self)
+        self.tv = tv
 
     def getTv(self):
         return self.tv
